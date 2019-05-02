@@ -189,7 +189,7 @@ function getVolumeCamionPrompt(camionsNames) {
   return camionsNames.map((camion, numCamion) => {
     return questionFactory(
       `volumeCamion-${numCamion + 1}`,
-      `Volume camion ${numCamion + 1}/${camionsNames.length}`,
+      `Volume du camion n°${numCamion + 1}`,
       'number'
     )
   })
@@ -198,7 +198,7 @@ function getTypeCamionPrompt(camionsNames) {
   return camionsNames.map((message, i) => {
     return {
       name: `typeCamion-${i + 1}`,
-      message: `Le type du camion ${i + 1}/${camionsNames.length}`,
+      message: `Le type du camion n°${i + 1}`,
       type: 'input',
     }
   })
@@ -235,7 +235,7 @@ function confirmForm(msg) {
     .then(respons => {
       if (!respons.responseIsOk) initBot()
       else {
-        console.log('Aurevoir merci')
+        console.log('Merci, à bientôt')
       }
     })
 }

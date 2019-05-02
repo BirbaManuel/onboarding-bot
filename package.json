@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "node ./src/onboadingTrusk.js",
+    "start": "node ./onboadingTrusk.js",
     "test": "jest",
     "build": "npx webpack --mode=development",
     "lint": "eslint ./src/index.js"
