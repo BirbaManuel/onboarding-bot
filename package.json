@@ -1,0 +1,23 @@
+{
+  "name": "onboarding-demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/onboadingTrusk.js",
+    "test": "jest",
+    "build": "npx webpack --mode=development",
+    "lint": "eslint ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bluebird": "^3.5.4",
+    "chalk": "^2.4.2",
+    "inquirer": "^6.3.1",
+    "jest": "^24.7.1",
+    "redis": "^2.8.0"
+  },
+  "dependencies": {}
+}
